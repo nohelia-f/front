@@ -8,17 +8,19 @@
 
 body {
     font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+
+/*//*//* header */
+.imagenes-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
     padding: 20px;
 }
 
 .logo {
     width: 145px;
-}
-
-.imagenes-inicio {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
 }
 
 .hamburguesa {
@@ -33,32 +35,364 @@ header button {
     display: none;
 }
 
+
+/*//*//* main */
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
+    /* border: orangered 2px solid; */
 }
 
 .graficas {
-    margin-top: 50px;
+    margin-top: 80px;
+    display: flex;
 }
 
-.graficas a {
-    position: relative;
+.graficas img {
+   align-items: center;
+    
 }
 
 h1 {
     color:#232C50;
-    line-height: 66px;
+    line-height: 60px;
     font-weight: 700;
     font-size: 50px;
     text-align: center;
+    margin: 5px;
 }
 
-.presentacion p {
-    line-height: 26px;
-    font-weight: 500;
-    font-size: 16px;
+h4 {
+    color:#232C50;
+    line-height: 41px;
+    font-weight: 700;
+    font-size: 36px;
     text-align: center;
 }
 
+p {
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    margin: 20px;
+}
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.texto-ppal {
+    margin-top: 100px;
+}
+
+.texto-dif p {
+    margin-top: 40px;
+}
+
+
+/*//*//* caracteristicas */
+.caracteristicas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.numeros-caja {
+    margin-bottom: 20px;
+}
+
+.numeros-titulo{
+    background-color: #8B48BF4D;
+    border-radius: 50px 0px 0px 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.numeros {
+    align-items: center;
+   background-color: #8B48BF;
+   border-radius: 30px;
+   color: white;
+   padding: 10px 25px;
+}
+
+.numeros-titulo h5 {
+    color: #323851;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: -0.015em;
+    margin: 10px;
+    text-align: left;
+}
+
+.numeros-caja p {
+    color: #B3B2B7;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.01em;
+    text-align: left;
+}
+
+/*//*//* testimonios */
+.testimonio-caja {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonio-caja h4 {
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: -0.01em;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.perfil img {
+    width: 70px;
+    height: 70px;
+    z-index: 2;
+}
+
+.perfil-hide {
+    display: none;
+}
+
+.texto-perfiles {
+    background-color: #FAFAFA;
+    width: 445px;
+    height: 219px;
+    padding: 20px;
+}
+
+/*//*//* botones */
+button {
+    background-color: #8B48BF;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    width: 134px;
+    height: 44px;
+}
+
+.cta button {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    color: #8B48BF;
+    box-shadow: 0px 4px 8px 0px #00000040;
+}
+
+button:hover {
+    background-color: rgba(194, 129, 243, 0.345);
+}
+
+.cta {
+  background-color: #8B48BF;
+  color: white;
+  font-weight: 400;
+  font-size: 40px;
+  letter-spacing: -0.005em;
+  text-align: center;
+  padding: 40px 80px 40px 80px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1E26;
+    color: white;
+    padding: 30px 10px 30px 10px;
+}
+
+.listas-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+li {
+    font-size: 16px;
+    line-height: 23.38px;
+    margin: 20px;
+}
+
+.logo-footer {
+    margin: 20px;
+}
+
+form {
+    margin: 20px
+}
+
+form input{
+    background-color: white;
+    border-radius: 50px;
+    margin: 5px;
+    padding: 10px;
+    width: 308px;
+    height: 44px;
+}
+
+form button {
+    border-radius: 50px;
+    margin: 0px;
+    width: 63px;
+    height: 42px;
+}
+
+.redes img {
+    margin: 30px;
+}
+
+
+@media (min-width:1400px) {
+    /* style when bigger than 1400 */
+
+    
+/* Header y nav */
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .nav-inicio {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        color: #242E52;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    nav ul:hover {
+        color: rgba(36, 46, 82, 0.6);
+    }
+        
+    .hamburguesa {
+        display: none;
+    }
+
+    header button {
+        display: inline-block;
+        box-shadow: 0px 4px 8px 0px #00000040;
+        margin-top: 40px;
+    }
+
+    header button:hover {
+        background-color: rgba(194, 129, 243, 0.345);
+    }
+
+    .perfil-hide {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    /* Main */
+
+    main {
+        padding: 80px;
+    }
+
+    .inicio {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .graficas {
+        position: relative;
+        height: 525px;
+        width: 580px;
+        left: 614px;
+    }
+
+    .presentacion {
+        position: relative;
+        align-items: flex-start;
+        width: 439px;
+        height: 386px;
+        right: 714px;
+        text-align: left;
+    }
+
+    .presentacion h1 {
+        text-align: left;
+    }
+
+    .presentacion p {
+        text-align: left;
+    }
+
+    .presentacion button {
+        margin: 0px;
+    }
+
+    .texto-ppal {
+        border: #8B48BF 2px solid;
+        display: flex;
+        justify-content: center;
+    }
+
+    .texto-dif {
+        border: pink 2px double;
+    }
+
+    .texto-dif h4 {
+        text-align: left;
+    }
+
+    .texto-dif p {
+        margin: 20px 0px;
+        padding-right: 120px;
+        text-align: left;
+    }
+
+    .numeros-caja {
+        position: relative;
+    }
+
+    .numeros-titulo {
+        background-color: white;
+    }
+
+    .testimonio-caja {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .perfil img {
+        z-index: 2;
+    }
+    
+}
